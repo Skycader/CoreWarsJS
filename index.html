@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel='stylesheet' href='index.css'>
+	</head>
+
+	<body>
+		
+		<div class='row-1'>
+			<div class='arena'>
+			<div class='battleField'></div>
+				<div class='control-panel'>
+					<p>Cells</p><input id='max' onchange='setup()' type='number' value=1000></input>
+					<button onclick='play()'>Play</button>
+					<button onclick='pause()'>Pause</button><button onclick='stop()'>Stop</button>
+					<p>Speed</p><input id='speed' onchange='play()' type='range' min=0 max=20 step=0.1 value=1></input>
+					<button onclick='step()'>Step</button>
+				</div>
+
+			</div>
+			<div class='tape'></div>
+			
+		</div>
+
+		<div class='bots-panel'>
+			<div onclick='addBot()' class='add-bot'>+</div>
+		</div>
+	</body>
+
+	<script src='index.js'></script>
+</html>
